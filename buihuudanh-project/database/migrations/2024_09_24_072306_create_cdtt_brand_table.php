@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('name', 1000);
             $table->string('slug', 1000)->nullable();
-            $table->unsignedInteger('parent_id')->default(0);
             $table->unsignedInteger('sort_order')->default(0);
             $table->text('description')->nullable();
             $table->string('image', 1000)->nullable();
